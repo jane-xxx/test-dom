@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            margin: 0;
+            line-height: 32px;
+        }
+        img {
+            display: block;
+            width: 300px;
+            transition: all 3s;
+        }
+        img:hover {
+            filter: none;
+        }
+        .img1 {
+            /* 滤镜属性
+            * grayscale(%|num) 设置灰度
+            */
+            filter: grayscale(1);
+        }
+        .img2 {
+            /* 滤镜属性
+            * brightness(%|num) 设置亮度 1是正常 >1属于曝光 <1属于趋于黑暗
+            */
+            filter: brightness(2);
+        }
+        .img3 {
+            /* 滤镜属性
+            * sepia(%|num) 设置褐色 老照片
+            */
+            filter: sepia(1);
+        }
+        .img4 {
+            /* 滤镜属性
+            * blur(px) 设置模糊度
+            */
+            filter: blur(5px);
+        }
+        .img5 {
+            /* 滤镜属性
+            * contrast(%|num) 设置对比度 1是正常 0没有任何对比度，变为灰色
+            */
+            filter: contrast(3);
+        }
+        .img6 {
+            /* 滤镜属性
+            * saturate(%|num) 设置饱和度 1是正常 值越大饱和度越高
+            */
+            filter: saturate(2);
+        }
+        .img7 {
+            /* 滤镜属性
+            * invert(%|num) 设置色像 胶片底色
+            */
+            filter: invert(1);
+        }
+        .img8 {
+            /* 滤镜属性
+            * hue-rotate(deg) 设置色像旋转
+            */
+            filter: hue-rotate(180deg);
+        }
+        .img9 {
+            /* 来个混合的 */
+            filter: blur(10px) grayscale(1);
+        }
+        .img9:hover {
+            filter: blur(0) grayscale(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- css实现滤镜效果 -->
+    <h3>设置灰度</h3>
+    <img class="img1" src="./img/img.jpeg"/>
+    <h3>调节亮度</h3>
+    <img class="img2" src="./img/img.jpeg"/>
+    <h3>设置褐色</h3>
+    <img class="img3" src="./img/img.jpeg"/>
+    <h3>调整模糊度</h3>
+    <img class="img4" src="./img/img.jpeg"/>
+    <h3>设置对比度</h3>
+    <img class="img5" src="./img/img.jpeg"/>
+    <h3>调整饱和度</h3>
+    <img class="img6" src="./img/img.jpeg"/>
+    <h3>调整色像</h3>
+    <img class="img7" src="./img/img.jpeg"/>
+    <h3>调整色像选择</h3>
+    <img class="img8" src="./img/img.jpeg"/>
+    <h3>混合滴</h3>
+    <img class="img9" src="./img/img.jpeg"/>
+</body>
+</html>
